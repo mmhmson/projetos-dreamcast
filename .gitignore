@@ -1,0 +1,65 @@
+# ---- gerados pelo build ----
+*.o
+*.elf
+*.bin.bak
+*.cdi
+*.iso
+build-cd/
+romdisk.img
+romdisk.o
+__pycache__/
+*.pyc
+
+# ---- backups (zips locais) ----
+backups/
+
+# ---- ferramentas de terceiros (binários) ----
+ferramentas/flycast/
+ferramentas/dados_osm/
+
+# ---- material de ESTUDO / terceiros (nunca versionar nem distribuir) ----
+projetos/10-formula/referencia_video/
+projetos/10-formula/referencia_cockpit/
+projetos/10-formula/fotos_texturas/
+modelos-baixados/
+*.wad
+*.WAD
+*.mp4
+*.wav
+*.raw
+
+# ---- imagens de teste/prévia (regeneráveis) ----
+projetos/10-formula/capturas/
+projetos/10-formula/previa_tecnicas/
+projetos/10-formula/comparacao_vq/
+
+# ---- versões antigas dos recursos gerados (guardadas só localmente) ----
+projetos/10-formula/ceu_*.bin
+projetos/10-formula/texturas_antes_fotos.bin
+
+# ---- fontes/arquivos de terceiros baixados (ports) ----
+ports/fontes-baixadas/
+
+# ---- dados grandes/regeneráveis de outros projetos ----
+projetos/09-corrida/videos/
+*.webp
+*.dms
+projetos/06-carro/assets/*.obj
+projetos/07-peugeot206/lods/
+projetos/07-peugeot206/fonte/
+
+# ---- modelo .obj de terceiros e tudo derivado dele (licença não permite/indefinida p/ redistribuir) ----
+projetos/10-formula/modelo_obj/
+projetos/10-formula/carro_obj.h
+# texturas geradas (contêm as pinturas do .obj): rode "py -I gerar_texturas.py" (o Makefile faz isso)
+projetos/10-formula/texturas.bin
+projetos/10-formula/texturas.h
+
+# ---- repositório público: só o jogo (10-formula) e o port do Doom ----
+projetos/*
+!projetos/10-formula/
+NOTAS_ESTUDOS.md
+ferramentas/*
+!ferramentas/mkcdi.sh
+!ferramentas/screenshot.ps1
+!ferramentas/gerar_pista_osm.py
